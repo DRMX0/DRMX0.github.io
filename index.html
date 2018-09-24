@@ -13,7 +13,31 @@
    <body>
 	<button onclick='Count()'>u sure tho?</button>
    </body>
+   <head>
+	<script>
+	function Count(){
+		var x = 0;
+		while (x<10) {
+			alert(x);
+			x=x+1;
+		}
+	}
+	</script>
+   </head>
+   <body>
+	<button onclick='Count()'>Start Counting!</button>
+   </body>
+   <script>
+   	var text = prompt("Enter Caesar Cipher: ");
+	var shift = prompt("Enter shift (n units right): ");
+	var text2 = text.replace(/\s/g, '');                                                                                                                                     
+	var i;
+	for (i in text2) { 
+	console.log(String.fromCharCode((text2.charCodeAt(i)) - (parseInt(shift))));
+	}
+   </script>
   <h5><em>c o o l</h5>
 </html>
+	
 
 
