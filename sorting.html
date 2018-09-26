@@ -1,15 +1,24 @@
 <html>
-   <head>
-   <h1> Done! Thanks for visiting! </h1>
-   <script>
-   		var text = prompt("Enter data: ");
-     	   var text1 = prompt("Enter data: ");
-     	   var text2 = prompt("Enter data: ");
-     	   var text3 = prompt("Enter data: ");
-     	   var text4 = prompt("Enter data: ");
-     	   var sortlist = [String(text), String(text1), String(text2), String(text3), String(text4)];
-     	   new = sortlist.sort();
-     	   console.log(new);
-   </script>
-   </head>
+<body>
+<h3>Thanks for visiting the website!</h3>
+<button onclick="sfunction()">Sort!</button>
+
+<p id="demo"></p>
+
+<script>
+var text = prompt("Enter data: ")
+var text1 = prompt("Enter data: ") 
+var text2 = prompt("Enter data: ")
+var text3 = prompt("Enter data: ")
+var text4 = prompt("Enter data: ")
+var lisst = [String(text), String(text1), String(text2), String(text3), String(text4)];
+document.getElementById("demo").innerHTML = lisst;
+
+function sfunction() {
+    lisst.sort();
+    document.getElementById("demo").innerHTML = lisst;
+}
+</script>
+
+</body>
 </html>
